@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function fetch_testdata() {
    # Fetch testdata if directory is not present.
 

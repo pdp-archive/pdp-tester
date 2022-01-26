@@ -119,22 +119,22 @@ do
    timeout $time_limit ./../$executable
    # Check that no timeout occurred.
    if [ "$?" = 124 ]; then
-      echo -e "         [\e[93mtimeout\e[0m] Test $i"
+      echo -e "         [\033[93mtimeout\033[0m] Test $i"
       did_fail="true"
    else
       result=$(diff --strip-trailing-cr --ignore-trailing-space ../$norm2 $fixed_out_name | head -c 200)
       # Check that output file was produced and was correct.
       if [[ "$result" != '' || ! -f $fixed_out_name ]]; then 
-         echo -e "         [\e[31mwrong\e[0m] Test $i:"
+         echo -e "         [\033[31mwrong\033[0m] Test $i:"
          echo "           " $result
          did_fail="true"
       fi;
    fi;
 done;
 if [ "$did_fail" = "false" ] ; then
-   echo -e "      Done [\e[92mPASS\e[0m]\n"
+   echo -e "      Done [\033[92mPASS\033[0m]\n"
 else
-   echo -e "      Done [\e[31mFAIL\e[0m]\n"
+   echo -e "      Done [\033[31mFAIL\033[0m]\n"
 fi
 cd ../
 rm -r tmp/

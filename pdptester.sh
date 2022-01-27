@@ -37,14 +37,14 @@ while [ "$1" != "" ]; do
          testcasesstr=$1
       ;;
       -h | --help )
-         echo -e "bash pdptester <PDP no>-<problem codename> <executable> (--time_limit <seconds>) (--cases <cases to run>)\n"
+         echo -e "bash pdptester.sh <PDP no>-<problem codename> <executable> (--time_limit <seconds>) (--cases <cases to run>)\n"
          echo ""
          echo -e "Για παράδειγμα αν το όνομα αρχείου είναι a.exe (ή a.out) τότε,\nη εξής εντολή τρέχει όλα τα testcases.\n"
-         echo -e "    bash pdptester 30-astrolavos a.out\n"
+         echo -e "    bash pdptester.sh 30-astrolavos a.out\n"
          echo -e "Αν θέλουμε να τρέξουμε μόνο τα testcases 1,3,5,6,7,9, μπορούμε\nνα το γράψουμε ως εξής (προσοχή δεν υπάρχουν κενά μεταξύ των αριθμών):\n"
-         echo -e "    bash pdptester 30-astrolavos a.out --cases 1,3,5-7,9\n"
+         echo -e "    bash pdptester.sh 30-astrolavos a.out --cases 1,3,5-7,9\n"
          echo -e "Ο προκαθορισμένος χρονικός περιορισμός είναι 1s. Μπορείτε να το\nαυξήσετε ως εξής:\n"
-         echo -e "    bash pdptester 30-astrolavos a.out --time_limit 2\n"
+         echo -e "    bash pdptester.sh 30-astrolavos a.out --time_limit 2\n"
          exit
       ;;
     esac

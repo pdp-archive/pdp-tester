@@ -1,3 +1,4 @@
+## ΠΔΠ-tester: Έλεγχος προγραμμάτων για τον Πανελλήνιο Διαγωνισμό Πληροφορικής
 
 Σε αυτό το παράδειγμα θα δούμε πώς μπορούμε να τρέξουμε τα testcases για το πρόβλημα astrolavos του ΠΔΠ 30. Ξεκινάμε κατεβάζοντας τον tester:
 
@@ -15,18 +16,18 @@ g++ my_astrolavos.cc
 Και αν δεν υπάρχουν λάθη δημιουργεί ένα αρχείο a.exe (ή a.out ή κάτι άλλο). Για να τρέξετε όλα τα testcases τρέχετε:
 
 ```
-pdptester 30-astrolavos a.out
+bash pdptester 30-astrolavos a.out
 ```
 
 Αν θέλουμε να τρέξουμε μόνο τα testcases 1,3,5,6,7,9, μπορούμε να το τρέξουμε το εξής (προσοχή δεν υπάρχουν κενά μεταξύ των αριθμών):
 
 ```
-pdptester 30-astrolavos a.out --cases 1,3,5-7,9
+bash pdptester 30-astrolavos a.out --cases 1,3,5-7,9
 ```
 
 Ο προκαθορισμένος χρονικός περιορισμός είναι 1s. Μπορείτε να το αυξήσετε ως εξής:
 
 ```
-pdptester 30-astrolavos a.out --time_limit 2
+bash pdptester 30-astrolavos a.out --time_limit 2
 ```
 

@@ -42,7 +42,7 @@ while [ "$1" != "" ]; do
          echo -e "Για παράδειγμα αν το όνομα αρχείου είναι a.exe (ή a.out) τότε,\nη εξής εντολή τρέχει όλα τα testcases.\n"
          echo -e "    pdptester 30-astrolavos a.out\n"
          echo -e "Αν θέλουμε να τρέξουμε μόνο τα testcases 1,3,5,6,7,9, μπορούμε\nνα το γράψουμε ως εξής (προσοχή δεν υπάρχουν κενά μεταξύ των αριθμών):\n"
-         echo -e "    pdptester 30-astrolavos a.out --cases [1,3,5-7,9]\n"
+         echo -e "    pdptester 30-astrolavos a.out --cases 1,3,5-7,9\n"
          echo -e "Ο προκαθορισμένος χρονικός περιορισμός είναι 1s. Μπορείτε να το\nαυξήσετε ως εξής:\n"
          echo -e "    pdptester 30-astrolavos a.out --time_limit 2\n"
          exit
